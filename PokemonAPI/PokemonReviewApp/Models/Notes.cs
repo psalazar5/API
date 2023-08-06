@@ -24,5 +24,9 @@
      * development purposes as well providing a starting point for users who interact with the API.
      */
 
+    /* After scripting into seeding class, went back into the program.cs file, we wire it up with dependency injection, bringing it inside the program. AddTransient was
+     * injected in the very beginning. Under 'var app = builder.Build();' we added a service injection and it seeds the datacontext before the app starts.
+     */
+
     }
 }
