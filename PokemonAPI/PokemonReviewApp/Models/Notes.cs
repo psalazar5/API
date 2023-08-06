@@ -23,7 +23,6 @@
      * Seeding this DB is done in the initialization phase , ensures our application has data to work with in the beginning. This is useful for testing and 
      * development purposes as well providing a starting point for users who interact with the API.
      */
-    /* After scripting 
 
     }
 }
