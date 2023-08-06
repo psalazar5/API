@@ -23,7 +23,8 @@
      * Seeding this DB is done in the initialization phase , ensures our application has data to work with in the beginning. This is useful for testing and 
      * development purposes as well providing a starting point for users who interact with the API.
      */
-    /* After scripting 
+    /* After scripting into seeding class, went back into the program.cs file, we wire it up with dependency injection, bringing it inside the program. AddTransient was
+     * injected in the very beginning. Under 'var app = builder.Build();' we added a service injection and it seeds the datacontext before the app starts 
 
     }
 }
