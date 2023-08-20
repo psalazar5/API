@@ -14,8 +14,21 @@
 
         //------ Program File Setup------//
 
+<<<<<<< HEAD
         //After, we worked on program file setup, by adding our DBcontext<DataContext> we are using db builder service to bring in the SQL server into the program along with our connection string. 
         //This allows us to reach into our app setting JSON & pulls out our connection string.
+=======
+    //----- Seeding DataBase ----//
+    /*After all this is completed, we seed our database, process of populating the database with intial data. Since I started the API it was empty, but since 
+     * seeding is crucial for this part of API creating, it insertss predefined data into PokemonAPI DB such as our properties that were created.
+     * Seeding this DB is done in the initialization phase , ensures our application has data to work with in the beginning. This is useful for testing and 
+     * development purposes as well providing a starting point for users who interact with the API.
+     */
+
+    /* After scripting into seeding class, went back into the program.cs file, we wire it up with dependency injection, bringing it inside the program. AddTransient was
+     * injected in the very beginning. Under 'var app = builder.Build();' we added a service injection and it seeds the datacontext before the app starts.
+     */
+>>>>>>> 7ea7edea5d877dcf13b805645e8f3567bb38ad6a
 
         //----- Seeding DataBase ----//
 
