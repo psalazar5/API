@@ -8,7 +8,7 @@ namespace PokemonReviewApp
         private readonly DataContext dataContext;
         public Seed(DataContext context)
         {
-            this.dataContext = context; 
+            this.dataContext = context;  
         }
         public void SeedDataContext()
         {
