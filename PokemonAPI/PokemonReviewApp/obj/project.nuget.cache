@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "hppdxVEAB/RwXrzNvcdD5cXO95cFMQ2VHBKY7EkqUFkPWTkVttxyIk8T9gvSZ19ktQmJ+1ZK1iY3AzuEir4MZg==",
-=======
-  "dgSpecHash": "N+R47C4MVcp6Z2bsbgaYP4MO2JtYfWQYO541qFAhC/UbJguV16m1TBMfRPwx6HB83UMO3ntNHBIrXAgqNHzE+g==",
->>>>>>> 7ea7edea5d877dcf13b805645e8f3567bb38ad6a
   "success": true,
-  "projectFilePath": "C:\\Users\\psala\\Desktop\\API\\PokemonAPI\\PokemonReviewApp\\PokemonReviewApp.csproj",
+  "projectFilePath": "C:\\Users\\psala\\SoftwareDevelopment\\API\\PokemonAPI\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\psala\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -82,5 +78,12 @@
     "C:\\Users\\psala\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\psala\\SoftwareDevelopment\\API\\PokemonAPI\\PokemonReviewApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
