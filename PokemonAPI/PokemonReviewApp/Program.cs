@@ -10,11 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddTransient<Seed>(); //Transient adds injection in very beginning
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(); //
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+}); //
 
 var app = builder.Build();
 
