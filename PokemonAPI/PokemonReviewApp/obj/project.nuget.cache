@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uT9ebNpmUp5B7bZSRbY9VDDjZ+0JTQUV+ZqW3H6o0d3UTWjCrc/zn7eMxYGwFW/Az6uzEA/ZM8A2sx6O1ReWKw==",
+  "dgSpecHash": "OvaPQZFUXyHP/fbKEcwOdhkJXMOr0ETOUgiIa8ZqlDKFHpzaxGBoW53mW9wkhWQ7hFHQRtFecaJmjDmG7lfL9A==",
   "success": false,
-  "projectFilePath": "C:\\Users\\psala\\Desktop\\API\\PokemonAPI\\PokemonReviewApp\\PokemonReviewApp.csproj",
+  "projectFilePath": "C:\\Users\\psala\\SoftwareDevelopment\\API\\PokemonAPI\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\psala\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -77,7 +77,7 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package Microsoft.EntityFramew   orkCore.Design. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
+      "message": "Unable to find package Microsoft.EntityFramew   orkCore.Design. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "Microsoft.EntityFramew   orkCore.Design",
       "targetGraphs": [
         "net6.0"
