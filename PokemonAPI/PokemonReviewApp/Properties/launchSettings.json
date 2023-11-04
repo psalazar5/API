@@ -27,5 +27,5 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
-  }
+  }       // Configure how app launches 
 }

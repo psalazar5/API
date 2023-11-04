@@ -172,3 +172,6 @@ C:\Users\psala\Desktop\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\refint\P
 C:\Users\psala\Desktop\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.pdb
 C:\Users\psala\Desktop\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.genruntimeconfig.cache
 C:\Users\psala\Desktop\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\ref\PokemonReviewApp.dll
+C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.dll
+C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\refint\PokemonReviewApp.dll
+C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.pdb

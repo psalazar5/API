@@ -21,7 +21,7 @@ var app = builder.Build();
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
     SeedData(app);
 
-void SeedData(IHost app)
+void SeedData(IHost app) //Injecting Service, seeds datacontext before app starts, with arguments 
 {
     var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
 
