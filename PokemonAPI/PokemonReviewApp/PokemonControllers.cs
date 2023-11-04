@@ -15,11 +15,16 @@ namespace PokemonReviewApp
             _pokemonRepository = pokemonRepository;
         }
 
-        [HttpGet]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Pokemon>))]
+        [HttpGet] // action method in controller should respond to http get requests 
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Pokemon>))] //specifying possible http response types & actions it can produce 
         public IActionResult GetPokemons() 
         {
-            var pokemons = _pokemonRepository.GetPokemons();
+            var pokemons = _pokemonRepository.GetPokemons(); //brings in oure code from PokemonRepository.cs
+
+            if (!ModelState.IsValid) //if we submitted a wrong data in the wrong context of pokemonapi it will detect that & returns a bad reqeust 
+                return BadRequest(ModelState);
+
+            return Ok(pokemons);
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using PokemonReviewApp.Data;
+using PokemonReviewApp.Interfaces;
 using PokemonReviewApp.Models;
 
 namespace PokemonReviewApp.Repository
 {
-    public class PokemonRepository
+    public class PokemonRepository : IPokemonRepository //inherting IPokemon Interface 
     {
         private readonly DataContext _context;
 
@@ -16,5 +17,5 @@ namespace PokemonReviewApp.Repository
         {
             return _context.Pokemon.OrderBy(p => p.Id).ToList(); //ordering / manipulation 
         }
-    }
+    } 
 }
