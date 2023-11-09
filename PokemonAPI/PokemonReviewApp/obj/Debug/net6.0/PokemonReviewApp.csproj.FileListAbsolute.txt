@@ -215,3 +215,5 @@ C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\scopedc
 C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.csproj.CopyComplete
 C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\PokemonReviewApp.genruntimeconfig.cache
 C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\obj\Debug\net6.0\ref\PokemonReviewApp.dll
+C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\psala\Software\API\PokemonAPI\PokemonReviewApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

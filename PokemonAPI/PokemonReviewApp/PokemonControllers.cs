@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PokemonReviewApp.DTO;
 using PokemonReviewApp.Interfaces;
 using PokemonReviewApp.Models;
 /* Pokemon Controller is responsible for handling HTTP GET requests related to Pokemon data. It uses
@@ -25,8 +26,8 @@ namespace PokemonReviewApp
         [ProducesResponseType(200, Type = typeof(IEnumerable<Pokemon>))] //specifying possible http response types & actions it can produce 
         public IActionResult GetPokemons() // Get method is responsible for handling GET requests to retrieve a list of pokemon, it calls the _pokemonRepo method to fetch Pokemon data.
         {
-            var pokemons = _pokemonRepository.GetPokemons(); //brings in oure code from PokemonRepository.cs
-
+            var pokemons = _mapper.Map<List<PokemonDto>>(_pokemonRepository.GetPokemons()); //brings in our code from PokemonRepository.cs
+            //_mapper.Map used AutoMapper to map the list of the pokemon models to a list of PokemonDto models. Allows to return Dto's instead of domain models to the client which can control what data is exposed.
             if (!ModelState.IsValid) //if we submitted a wrong data in the wrong context of pokemonapi it will detect that & returns a bad reqeust 
                 return BadRequest(ModelState);
 
@@ -42,7 +43,7 @@ namespace PokemonReviewApp
             if (!_pokemonRepository.PokemonExist(pokeId))
                 return NotFound();
 
-            var pokemon = _pokemonRepository.GetPokemon(pokeId);
+            var pokemon = _mapper.Map<PokemonDto>(_pokemonRepository.GetPokemon(pokeId));// _mapper uses AutoMapper to map the single pokemon model to a PokemonDto model. Allows to return a DTO representing the requested Pokemon.
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
