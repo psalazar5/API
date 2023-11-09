@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "WOJsSUO7+80WqACAr8hrEUoFni3DyN4YmlD5XxQGCZv14BwfeT5stu3T6tPOhwU5b5F8qPOXW+i5NFauhly07g==",
+  "dgSpecHash": "hj6U+Hwf8eA3JY0OXZt/KxgFdca5D7y/slCXrkd1VhLeljQczGtL4hcn+6Pu2eJayAgrm37fNbZYcP7pDwgBoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\psala\\SoftwareDevelopment\\API\\PokemonAPI\\PokemonReviewApp\\PokemonReviewApp.csproj",
+  "projectFilePath": "C:\\Users\\psala\\Software\\API\\PokemonAPI\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\psala\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\psala\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\psala\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\psala\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\psala\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using PokemonReviewApp.Interfaces;
 using PokemonReviewApp.Models;
 /* Pokemon Controller is responsible for handling HTTP GET requests related to Pokemon data. It uses
@@ -11,11 +12,13 @@ namespace PokemonReviewApp
     [ApiController]
     public class PokemonControllers : Controller
     {
-        private readonly IPokemonRepository _pokemonRepository;
-
-        public PokemonControllers(IPokemonRepository pokemonRepository) //IPokemon ctor takes IPokemonRepository param , which is an interface representing a repo for managing pokemon data. (Constructor injection promotes loose coupling and modularity )
+        private readonly IPokemonRepository _pokemonRepository; //ensures _pokemonRepository field is set to a specific value when an instance of the 'PokemonControllers' class is created
+        //and that value remains constant for the lifetime of that instance. It promotes data integrity and helps prevent unintended changes to the fields value.
+        private readonly IMapper _mapper;
+        public PokemonControllers(IPokemonRepository pokemonRepository, IMapper mapper) //IPokemon ctor takes IPokemonRepository param , which is an interface representing a repo for managing pokemon data. (Constructor injection promotes loose coupling and modularity )
         {
             _pokemonRepository = pokemonRepository;
+            _mapper = mapper;
         }
 
         [HttpGet] // action method in controller should respond to http get requests 
@@ -28,6 +31,38 @@ namespace PokemonReviewApp
                 return BadRequest(ModelState);
 
             return Ok(pokemons);
+        }
+
+        [HttpGet("{pokeId}")]
+        [ProducesResponseType(200, Type = typeof(Pokemon))]
+        [ProducesResponseType(400)]
+
+        public IActionResult GetPokemon(int pokeId) //IActionResult represents the result of an action method in a controller. 
+        {
+            if (!_pokemonRepository.PokemonExist(pokeId))
+                return NotFound();
+
+            var pokemon = _pokemonRepository.GetPokemon(pokeId);
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return Ok(pokemon);
+        }
+
+        [HttpGet("{pokeId}/rating")]
+        [ProducesResponseType(200, Type = typeof(decimal))]
+        [ProducesResponseType(400)]
+        public IActionResult GetPokemonRating(int pokeId)
+        {
+            if (!_pokemonRepository.PokemonExist(pokeId))
+                return NotFound();
+            var rating = _pokemonRepository.GetPokemonRating(pokeId);
+
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            return Ok(rating);
         }
     }
 }
